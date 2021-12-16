@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        #instructions {
+            color: white;
+            position: absolute;
+            top: 30%;
+            left; 33%;
+            font-size: 70px;
+        }
+        
+        #racket {
+            position: absolute;
+            width: 400px;
+            transform: rotateZ(220deg);
+        }
+    </style>
+</head>
+<body>
+    <script src="three.js"></script>
+    <script src="FirstPersonControls.js"></script>
+    <script src="PointerLockControls.js"></script>
+    <script src="perlin.js"></script>
+    
+    <script type="text/javascript">
+        noise.seed(Math.random());
+        
+        var scene = new THREE.Scene();
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        function update() {
+        
+        }
+        
+        window.addEventListener("resize", function() {})
+    </script>
+</body>
